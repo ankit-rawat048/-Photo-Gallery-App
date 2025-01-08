@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    margin: 0px 100px ;
+    margin-top: 8px;
+    background-color: rgb(236, 253, 255);
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Use gap instead of padding for consistent spacing */
+    padding: 0;
+    margin-top: 8PX;
+    justify-content: center; /* Center items in the gallery */
+  }
+  
+  .image-card {
+    flex: 1 1 calc(25% - 8px); /* Adjusts card width to 25% minus the gap */
+    box-sizing: border-box; /* Ensures padding and border don't exceed width */
+    padding: 4px;
+    max-width: 200px; /* Ensures cards don't become too wide */
+  }
+  
+  .image-card img {
+    width: 100%; /* Ensures image fits the container */
+    height: auto;
+    display: block; /* Removes inline spacing below the image */
+    margin-top: 8px;
+    border-radius: 6px; /* Adds subtle rounding to the image corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visual appeal */
+  }
